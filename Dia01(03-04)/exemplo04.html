@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Cartão</title>
+
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            border: 1px solid #a8a7a7;
+            width: 10rem;
+            height: 12rem;
+            padding: 1rem;
+            margin: 2rem auto;
+            box-shadow: .5rem .5rem .3rem .01rem #5de310;
+            border-radius: .5rem;
+            color:#5de310;
+        }
+
+        .titulo {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .descricao {
+            font-size: .8rem;
+        }
+
+        .preco {
+            font-size: 1.6rem;
+            font-weight: bolder;
+            text-align: right;
+        }
+
+        img {
+            width: 10rem;
+            height: 6rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <script>
+            /*
+             * Estrutura sequencial.
+             * Comandos de saída.
+             * Comando de entrada.
+             * Template string e interpolação.
+             */
+            var nome = prompt("Informe o nome do produto:");
+            var descricao = prompt("Informe a descrição do produto:");
+            var preco = prompt("Informe o preço do produto:");
+            
+            document.write("<img src='image.png' alt='Logo de supermercado.' />");
+            document.write(`<h1 class="titulo">${nome}</h1>`);
+            document.write(`<article class="descricao">${descricao}</article>`);
+            document.write(`<aside class="preco">${preco}</aside>`);
+        </script>
+    </div>
+</body>
+
+</html>
