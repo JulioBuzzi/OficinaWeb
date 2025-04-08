@@ -1,7 +1,7 @@
 # Repositório da Oficina Web
 
 **Disciplina:** Oficina WEB  
-**Aluno:** Julio Cesar Thurow Buzzi
+**Aluno:** Julio Cesar Thurow Buzzi  
 **Professor:** Wesley Maciel
 
 ## Descrição
