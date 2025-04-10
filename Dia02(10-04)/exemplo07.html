@@ -22,11 +22,10 @@
             function ler() {
                 var num1 = parseInt(numero1.value);
                 var num2 = parseInt(numero2.value);
-                somar(num1,num2);
+                mostrar(num1,num2,somar(num1,num2));
             }
             function somar(num1, num2) {   
-                var soma = num1 + num2;
-                mostrar(num1,num2,soma);
+                return num1 + num2;
             }
             function mostrar(num1,num2,soma) {
                 document.getElementById("resp").innerHTML += `<p>${num1} + ${num2} = ${soma}</p><br>`;
