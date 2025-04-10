@@ -1,0 +1,69 @@
+* {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.painel {
+    border: 1px solid rgb(91, 91, 232);
+    padding: 1rem;
+    border-radius: .5rem;
+    width:25rem;
+    height: 22rem;
+    margin: 1rem auto;
+    box-shadow: .5rem .5rem .3rem .01rem rgb(91, 91, 232);
+}
+
+.cabecalho, 
+.corpo {
+    background-color: rgb(91, 91, 232);
+    padding: 1rem;
+    color: black;
+    font-weight: bolder;
+    width: 23rem;
+    border-radius: .5rem;
+}
+
+.cabecalho {
+    height: 4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.entrada {
+    width: 7rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+.corpo {
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+}
+
+#resp {
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
+button {
+    background-color: rgb(242, 106, 224);
+    color:rgb(246, 221, 221);
+    border: none;
+    padding: .2rem .5rem;
+    border-radius: .3rem;
+}
+
+button:hover {
+    background-color: rgb(252, 0, 193);
+    color:rgb(255, 255, 255)
+}
