@@ -1,1 +1,37 @@
-//funcao ler somar e mostrar PARA CASA
+<!-- funcao ler somar e mostrar PARA CASA -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <link rel="stylesheet" href="style05.css">
+</head>
+<body>
+    <div class="painel">
+        <section class="cabecalho">
+            <input type="number" id="numero1" class="entrada">
+            <input type="number" id="numero2" class="entrada">
+            <button onclick="ler()">Somar</button>    
+        </section>
+        <main class="corpo">
+            <div id="resp"></div>
+        </main>
+    </div>
+        <script>
+            function ler() {
+                var num1 = parseInt(numero1.value);
+                var num2 = parseInt(numero2.value);
+                somar(num1,num2);
+            }
+            function somar(num1, num2) {   
+                var soma = num1 + num2;
+                mostrar(num1,num2,soma);
+            }
+            function mostrar(num1,num2,soma) {
+                document.getElementById("resp").innerHTML += `<p>${num1} + ${num2} = ${soma}</p><br>`;
+            }
+        </script>
+    
+</body>
+</html>
