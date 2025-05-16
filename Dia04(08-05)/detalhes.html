@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Cidade</title>
+    <link rel="stylesheet" href="detalhes.css" />
+</head>
+<body>
+    <div id="tela"></div>
+
+    <script src="app.js"></script>
+
+    <script>
+        carregarDadosJSONServer(apresentarDadosNoElementoDivTela);
+
+        function apresentarDadosNoElementoDivTela() {
+            let tela = document.getElementById('tela')
+            
+            let params = new URLSearchParams(window.location.search)
+            let id = params.get('id')
+
+            cidade = cidades.find(function(elem) { return elem.id == id })
+
+                        if (cidade) {
+                tela.innerHTML = `
+                <img src="${cidade.imagem}" alt="Imagem de ${cidade.cidade}" />
+                <p>
+                <strong>${cidade.cidade}</strong> <br/>
+                Estado: ${cidade.estado} <br/>
+                População: ${cidade.populacao.toLocaleString('pt-BR')}
+                </p>`;
+            } else {
+            tela.innerHTML = `Cidade não encontrada`;
+            }
+        }
+    </script>
+</body>
+</html>

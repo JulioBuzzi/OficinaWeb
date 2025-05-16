@@ -1,0 +1,98 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo da página */
+body {
+  background-color: #f5f6fa;
+  color: #2f3640;
+  padding: 20px;
+}
+
+nav {
+    display:flex;
+    justify-content: center;
+}
+
+button{
+    margin-right: 1rem;
+}
+/* Título principal */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #273c75;
+}
+
+/* Estilo geral de seções */
+section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+}
+
+h2 {
+  color: #192a56;
+  margin-bottom: 10px;
+}
+
+/* Inputs e botões */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+button {
+  background-color: #44bd32;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #4cd137;
+}
+
+/* Resultado das operações */
+#result,
+#allPosts,
+#updateResult,
+#deleteResult {
+  margin-top: 10px;
+  background-color: #dcdde1;
+  padding: 10px;
+  border-radius: 8px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

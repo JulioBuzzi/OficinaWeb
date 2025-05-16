@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exemplo de API Fetch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Julio Buzzi - Operações CRUD</h1>
+
+  <nav>
+    <button onclick="mostrarSecao('buscarPorId')">Buscar por ID</button>
+    <button onclick="mostrarSecao('buscarTodos')">Buscar Todos</button>
+    <button onclick="mostrarSecao('criar')">Criar</button>
+    <button onclick="mostrarSecao('atualizar')">Atualizar</button>
+    <button onclick="mostrarSecao('deletar')">Deletar</button>
+  </nav>
+
+  <!-- Buscar por ID -->
+  <section id="buscarPorId" class="active">
+    <h2>Buscar Postagem por ID</h2>
+    <input type="number" id="idBusca" placeholder="Digite o ID" />
+    <button onclick="buscarPorId()">Buscar</button>
+    <div id="respostaBuscaId"></div>
+  </section>
+
+  <!-- Buscar todos -->
+  <section id="buscarTodos">
+    <h2>Buscar Todas as Postagens</h2>
+    <button onclick="buscarTodos()">Buscar</button>
+    <div id="respostaTodos"></div>
+  </section>
+
+  <!-- Criar -->
+  <section id="criar">
+    <h2>Criar Nova Postagem</h2>
+    <input id="tituloCriar" placeholder="Título" />
+    <textarea id="corpoCriar" placeholder="Corpo"></textarea>
+    <input id="userIdCriar" type="number" placeholder="User ID" />
+    <button onclick="criarPostagem()">Criar</button>
+    <div id="respostaCriar"></div>
+  </section>
+
+  <!-- Atualizar -->
+  <section id="atualizar">
+    <h2>Atualizar Postagem</h2>
+    <input id="tituloAtualizar" placeholder="Novo Título" />
+    <textarea id="corpoAtualizar" placeholder="Novo Corpo"></textarea>
+    <input id="userIdAtualizar" type="number" placeholder="User ID" />
+    <button onclick="atualizarPostagem()">Atualizar (ID 1)</button>
+    <div id="respostaAtualizar"></div>
+  </section>
+
+  <!-- Deletar -->
+  <section id="deletar">
+    <h2>Deletar Postagem por ID</h2>
+    <input id="idDeletar" type="number" placeholder="ID da Postagem" />
+    <button onclick="deletarPostagem()">Deletar</button>
+    <div id="respostaDeletar"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+* {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    border: 1px solid rgb(218, 214, 214);
+    border-radius: .5rem;
+    box-shadow: 0rem .5rem .5rem .03rem rgb(218, 214, 214);
+    padding: 1rem;
+    width: 30rem;
+    height: 20rem;
+    margin: 1px auto;
+}
+
+.painel {
+    /*border: 1px solid rgb(218, 214, 214);
+    border-radius: .5rem;
+    padding: 1rem;*/
+    display: flex;
+}
+
+input {
+    flex: 2;
+    border-radius: .5rem;
+    border: 1px solid rgb(218, 214, 214);
+    padding: .5rem;
+}
+
+button {
+    flex: 1;
+    margin-left: 1rem;
+    background-color: rgb(28, 28, 164);
+    color: rgb(218, 214, 214);
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+}
+
+#resposta {
+    margin-top: .5rem;
+    border: 1px solid rgb(218, 214, 214);
+    border-radius: .5rem;
+    padding: 1rem;
+    display: flex;
+}
+
+.tile {
+    margin-top: .5rem;
+    background-color: rgb(218, 214, 214);
+    border: 1px solid rgb(218, 214, 214);
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 0.3rem;
+    display: flex;
+
+}
+
+.avatar {
+    color: white;
+    font-weight: bolder;
+    font-size: .9rem;
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maior-idade {
+    background-color: blue;
+}
+
+.menor-idade {
+    background-color: red;
+}

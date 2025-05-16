@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Cidades do Brasil</h1>
+  <div id="listaCidades" class="container"></div>
+
+  <script src="app.js"></script>
+  <script>
+    carregarDadosJSONServer(apresentarDadosNoElementoCidades);
+
+    function apresentarDadosNoElementoCidades() {
+      let container = document.getElementById("listaCidades");
+      let html = "";
+
+      for (let cidade of cidades) {
+        html += `
+          <div class="card">
+            <img src="${cidade.imagem}" alt="${cidade.cidade}" class="card-img">
+            <div class="card-content">
+              <h2>${cidade.cidade} - ${cidade.estado}</h2>
+              <p>População: ${cidade.populacao.toLocaleString()}</p>
+              <a href="detalhes.html?id=${cidade.id}" class="btn">Ver Detalhes</a>
+            </div>
+          </div>
+        `;
+      }
+
+      container.innerHTML = html;
+    }
+  </script>
+</body>
+
+
+</html>
